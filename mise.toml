@@ -1,0 +1,9 @@
+[tools]
+cmake = "latest"
+ninja = "latest"
+
+[tasks]
+build = "clang -O2 -Wall -o os1000 main.c"
+run   = "qemu-system-x86_64 -kernel os1000"
+
+
